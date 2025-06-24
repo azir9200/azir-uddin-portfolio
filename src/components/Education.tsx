@@ -1,0 +1,103 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useTheme } from "@/contexts/ThemeContext";
+import { Calendar, GraduationCap } from "lucide-react";
+
+const Education = () => {
+  const { theme } = useTheme();
+  const educationData = [
+    {
+      year: "2013 - 2014",
+      degree: " Masters of Business Administration (MBA)",
+      institution: "DHAKA UNIVERSITY",
+      location: "Location: Dhaka, Bangladesh",
+      description:
+        "Successfully completed an MBA in Accounting with a CGPA of 2.97. This program focused on advanced financial management, auditing, and strategic business analysis.",
+      status: "Graduate",
+    },
+    {
+      year: "2009 - 2013",
+      degree: " Bachelor of Business Administration",
+      institution: " NATIONAL UNIVERSITY",
+      location: "Location: Dhaka, Bangladesh",
+      description:
+        "Obtained a Bachelor's in Business Administration (BBA) in Accounting with a CGPA of 3.17. This program provided comprehensive knowledge in financial accounting, management accounting, and business principles.",
+      status: "Graduate",
+    },
+  ];
+
+  return (
+    <section
+      id="education"
+      className="py-20 bg-gradient-to-br from-slate-50 to-blue-50"
+    >
+      <div className="container mx-auto md:px-6 px-2">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Educational History
+          </h2>
+          <p className="text-xl text-gray-600">
+            My academic journey in accounting and business administration
+          </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto">
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute md:left-8 left-2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-500"></div>
+
+            <div className="space-y-12">
+              {educationData.map((edu, index) => (
+                <div key={index} className="relative flex items-start">
+                  {/* Timeline dot */}
+                  <div className="absolute md:left-6 left-0 w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full border-4 border-white shadow-lg"></div>
+
+                  {/* Content */}
+                  <div className="md:ml-20 ml-4 w-full">
+                    <Card className="shadow-lg border-0 hover:shadow-xl transition-shadow duration-300">
+                      <CardHeader className="bg-gradient-to-r from-blue-50 to-purple-50">
+                        <div className="flex items-center justify-between flex-wrap gap-2">
+                          <CardTitle className="text-sm md:text-xl font-bold text-gray-900 flex items-center gap-2">
+                            <GraduationCap className="w-6 h-6 text-blue-600" />
+                            {edu.degree}
+                          </CardTitle>
+                          <div className="flex items-center gap-2 text-blue-600 font-semibold">
+                            <Calendar className="w-4 h-4" />
+                            {edu.year}
+                          </div>
+                        </div>
+                        <div className="space-y-1">
+                          <p className="font-semibold text-gray-800">
+                            {edu.institution}
+                          </p>
+                          <p className="text-sm text-gray-600">
+                            {edu.location}
+                          </p>
+                        </div>
+                      </CardHeader>
+                      <CardContent className="pt-6">
+                        <p
+                          className={`${
+                            theme == "dark" ? " text-white" : ""
+                          } text-gray-600 leading-relaxed`}
+                        >
+                          {edu.description}
+                        </p>
+                        <div className="mt-4">
+                          <span className="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
+                            {edu.status}
+                          </span>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Education;
