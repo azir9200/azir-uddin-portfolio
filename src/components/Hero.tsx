@@ -20,15 +20,15 @@ const Hero = () => {
                   Hi, I'm{" "}
                 </span>
                 <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  Khadiza Binta Mahbub
+                  MD AZIR UDDIN
                 </span>
               </h1>
               <h2 className="text-xl lg:text-3xl font-light">
                 <span style={{ color: "#149ECA", fontWeight: "bold" }}>
                   <Typewriter
                     words={[
-                      "Professional Accountant & Bookkeeper.",
-                      "Specializing in Clean-Up & Catch-Up.",
+                      "Full-Stack MERN Developer.",
+                      "Specializing in Clean, Scalable Web Apps & API Integration.",
                     ]}
                     loop={true}
                     cursor

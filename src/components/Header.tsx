@@ -58,7 +58,7 @@ const Header = () => {
               activeSection
             )} bg-clip-text text-transparent transition-all duration-500`}
           >
-            Khadiza Binta Mahbub
+            AZIR UDDIN
           </div>
 
           <nav className="hidden md:flex space-x-8">
