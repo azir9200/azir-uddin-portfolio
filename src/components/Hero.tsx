@@ -40,10 +40,10 @@ const Hero = () => {
                 </span>
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-                I’m a freelance bookkeeper with 7 years of experience working
-                with small to medium-sized businesses across various industries.
-                I specialize in maintaining accurate financial records,
-                reconciling bank accounts, and processing payroll
+                I’m a MERN stack developer with experience building full-stack
+                web applications using MongoDB, Express.js, React, and Node.js.
+                I help businesses bring their ideas to life by creating clean,
+                scalable, and responsive web solutions.
               </p>
             </div>
 
@@ -109,14 +109,14 @@ const Hero = () => {
               <div className="md:w-[400px] md:h-[400px] w-[320px] h-[320px] rounded-full bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 p-1">
                 <div className="w-full h-full rounded-full bg-white p-4">
                   <img
-                    src="/Khadija3.jpg"
-                    alt="Sadia Akter"
+                    src="https://i.ibb.co/TDBzHJqC/azir-1.jpg"
+                    alt="Azir uddin"
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center animate-bounce">
-                <span className="text-white font-bold text-lg">BK</span>
+                <span className="text-white font-bold text-lg">MD</span>
               </div>
             </div>
           </div>
