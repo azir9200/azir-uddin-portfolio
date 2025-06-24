@@ -71,8 +71,9 @@ const Services = () => {
             What Do I Offer
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Efficiently tailored services designed to meet unique financial
-            needs and ensure long-term success.
+            Scalable, efficient, and modern web development solutions using the
+            MERN stack (MongoDB, Express.js, React, Node.js) — built to solve
+            real problems and deliver impactful user experiences.
           </p>
         </div>
 
