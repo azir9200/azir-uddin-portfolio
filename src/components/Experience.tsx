@@ -7,44 +7,39 @@ const Experience = () => {
   const { theme } = useTheme();
   const experiences = [
     {
-      position: "Freelance Bookkeeper",
-      company: "Pride Biz Solutions",
-      location: "Remote",
-      duration: "2023 - 2025",
+      position: "Assistant Service",
+      company: "KSG Food",
+      location: "St. James Hospital, Dublin, Ireland",
+      duration: "Dec 2024 - continue",
       type: "Full-time",
       description:
-        "Leading bookkeeping operations for multiple clients, ensuring accurate financial records and compliance. Specialized in QuickBooks Online and Xero implementations.",
+        "Provided high-quality customer service in a fast-paced café environment, assisting with order preparation, maintaining cleanliness, and ensuring customer satisfaction. Contributed to smooth daily operations by supporting baristas, managing stock levels, and handling point-of-sale transactions.",
       achievements: [
-        "Managing client bookkeeping accounts. ",
-        "Recording and categorizing transactions.",
-        "Reconciling bank and credit card accounts",
-        "Ensuring compliance and accuracy in records.",
-        "Handling multiple clients across industries. ",
-        "Ensuring compliance and accuracy in records.",
-        "Handling multiple clients across industries. ",
+        "Recognized for consistently delivering excellent customer service and improving customer satisfaction through friendly, efficient support.",
+        "Played a key role in maintaining smooth workflow during peak hours, contributing to increased daily sales and positive customer feedback.",
       ],
-      technologies: [
-        "QuickBooks Online",
-        "Xero",
-        "Wave",
-        "Excel",
-        "Google Sheets",
-      ],
+      // technologies: [
+      //   "QuickBooks Online",
+      //   "Xero",
+      //   "Wave",
+      //   "Excel",
+      //   "Google Sheets",
+      // ],
     },
     {
-      position: "Bookkeeping Specialist",
-      company: "FinanceFlow Solutions",
-      location: "Dhaka, Bangladesh",
-      duration: "2019 - 2022",
+      position: "Customer Service",
+      company: "Viking River Cruise",
+      location: "Porto, Portugal",
+      duration: "2017 - 2024",
       type: "Full-time",
       description:
-        "Provided comprehensive bookkeeping services for retail and service-based businesses, focusing on accurate financial reporting and tax preparation.",
+        "From May 2017 to November 2023, I worked as a Customer Service Representative at Viking River Cruise in Porto, Portugal. In this role, I was responsible for ensuring a smooth and enjoyable experience for international guests by assisting with their daily needs. I worked primarily in the restaurant and bar, providing food and beverage service, while also supporting the guest services team on certain days. This role required strong communication skills, attention to detail, and the ability to remain calm and professional in a fast-paced, multicultural environment. My flexibility and commitment to excellent service contributed to consistently positive guest experiences.",
       achievements: [
-        " Logging every transaction using internal software.",
-        " Posing all customer Invoices and Bills from vendors.",
-        "Responsible for LC, and other transactions.",
+        " Consistently praised by guests and supervisors for outstanding service and professionalism across restaurant, bar, and guest services.",
+        " Successfully adapted to multiple roles on board, contributing to smooth operations and enhancing overall guest satisfaction.",
+        "Played a key part in maintaining high customer satisfaction scores during seasonal evaluations and guest feedback surveys",
+        "Recognized for teamwork, reliability, and the ability to handle high-pressure situations during peak cruise seasons.",
       ],
-      technologies: ["QuickBooks Desktop", "Excel", "Sage", "FreshBooks"],
     },
   ];
 
@@ -56,8 +51,10 @@ const Experience = () => {
             Professional Experience
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A journey of growth and expertise in bookkeeping and financial
-            management across diverse business environments.
+            A journey of growth and expertise in customer-facing roles across
+            the hospitality and service industries in Ireland and Portugal.
+            Proven ability to communicate effectively, manage diverse tasks, and
+            provide high-quality service in fast-paced environments.
           </p>
         </div>
 
@@ -138,7 +135,7 @@ const Experience = () => {
                   </ul>
                 </div>
 
-                <div>
+                {/* <div>
                   <h4
                     className={`font-semibold text-gray-900 mb-3 ${
                       theme == "dark" ? " text-white" : ""
@@ -157,7 +154,7 @@ const Experience = () => {
                       </Badge>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           ))}

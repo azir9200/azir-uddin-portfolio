@@ -37,7 +37,7 @@ export const ProjectDetailsData = [
   },
   {
     id: 2,
-    type: "Clean-up & Catch up",
+    type: "e-Commerce-Project",
     title: "KOAD Logistics LLC",
     client: "Confidential",
     industry: "Transportation and Logistics",

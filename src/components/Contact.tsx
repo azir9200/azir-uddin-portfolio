@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 import {
+  Link,
   Linkedin,
   Mail,
   MapPin,
@@ -16,9 +17,17 @@ import {
   Phone,
   Send,
 } from "lucide-react";
+import {
+  FaFacebook,
+  FaFacebookF,
+  FaGithub,
+  FaLinkedin,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 const Contact = () => {
-  const form = useRef();
+  // const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -57,9 +66,6 @@ const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Contact Information
           </h2>
-          <p className="text-xl text-blue-200">
-            Let's discuss how I can help streamline your business finances
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -67,9 +73,12 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
               <p className="text-blue-200 leading-relaxed mb-8">
-                Ready to take your business finances to the next level? I'm here
-                to help you maintain accurate records, ensure compliance, and
-                provide insights for growth.
+                Ready to take your web application to the next level? As a MERN
+                Stack Developer, I'm here to build fast, scalable, and
+                user-friendly solutions. From maintaining clean code and
+                seamless integration to optimizing performance and ensuring best
+                practices, I help turn your ideas into powerful digital
+                experiences.
               </p>
             </div>
 
@@ -80,7 +89,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold">Phone</p>
-                  <p className="text-blue-200">+880 197 490 5960</p>
+                  <p className="text-blue-200">+353838485737</p>
                 </div>
               </div>
 
@@ -90,9 +99,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold">Email</p>
-                  <p className="text-blue-200">
-                    khadiza.atscorporation@gmail.com
-                  </p>
+                  <p className="text-blue-200">aziruddin83@gmail.com</p>
                 </div>
               </div>
 
@@ -102,40 +109,49 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold">Location</p>
-                  <p className="text-blue-200">Dhaka, Bangladesh</p>
+                  <p className="text-blue-200">Dublin, Ireland</p>
                 </div>
               </div>
             </div>
 
             <div className="flex space-x-4 pt-4">
-              <a href="https://wa.me/8801974905960" target="_blank">
+              <a href="https://www.linkedin.com/in/azir9200" target="_blank">
                 <Button
                   variant="outline"
                   size="icon"
                   className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
                 >
-                  <MessageSquare className="w-5 h-5" />
+                  <FaLinkedinIn className="w-10 h-10" />
+                </Button>
+              </a>
+              <a href="https://github.com/azir9200" target="_blank">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
+                >
+                  <FaGithub className="w-12 h-12" />
+                </Button>
+              </a>
+
+              <a href="https://www.facebook.com/azirzaif/about" target="_blank">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
+                >
+                  <FaFacebookF className="w-5 h-5" />
                 </Button>
               </a>
 
               <a
-                href="http://www.linkedin.com/in/khadizaremotebookkeeper"
+                href="https://mail.google.com/mail/u/0/#inbox?compose=new"
                 target="_blank"
               >
                 <Button
                   variant="outline"
                   size="icon"
-                  className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </Button>
-              </a>
-
-              <a href="mailto:khadiza.atscorporation@gmail.com" target="_blank">
-                <Button
-                  variant="outline"
-                  size="icon"
-                  className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
+                  className="border-blue-400 text-blue-400 text-2xl hover:bg-blue-400 hover:text-white"
                 >
                   <Mail className="w-5 h-5" />
                 </Button>
@@ -252,8 +268,8 @@ const Contact = () => {
 
         <div className="text-center mt-16 pt-8 border-t border-white/20">
           <p className="text-blue-200">
-            © 2024 | Experienced Financial Clerk & Your Trusted Bookkeeping
-            Partner
+            © 2024 | "Experienced Frontend Developer & Your Trusted Web
+            Development Partner"
           </p>
         </div>
       </div>

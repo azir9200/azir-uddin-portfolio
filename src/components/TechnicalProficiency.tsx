@@ -6,50 +6,60 @@ import { useTheme } from "@/contexts/ThemeContext";
 const TechnicalProficiency = () => {
   const { theme } = useTheme();
   const coreSkills = [
-    { name: "Financial Record Management", level: 100 },
-    { name: "Account Categorization & Reconciliation", level: 100 },
-    { name: "Accounts Payable & Receivable", level: 98 },
-    { name: "General Ledger Management", level: 100 },
-    { name: "Payroll Processing", level: 95 },
+    { name: "Full-Stack JavaScript Development (MERN) ", level: 100 },
+    { name: "RESTful API Design & Integration", level: 100 },
+    { name: "Frontend Development with React.js", level: 98 },
+    { name: "Backend Development with Node.js & Express.js", level: 100 },
+    { name: "Database Design & Management (MongoDB, Mongoose) ", level: 95 },
     {
-      name: "Proficiency in Accounting Software (QuickBooks, Xero)",
+      name: "Version Control & Collaboration (Git, GitHub) ",
       level: 100,
     },
-    { name: "Preparing Financial Reports", level: 100 },
+    {
+      name: "Responsive UI Design & Styling (Tailwind CSS, ShadCN UI) ",
+      level: 100,
+    },
   ];
 
   const softSkills = [
-    "Problem Solving",
-    "Attention to Detail",
-    "Time Management",
-    "Communication",
-    "Analytical Thinking",
-    "Team Work",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "Javascript",
+    "Typescript",
+  ];
+  // Frameworks / Libraries
+  const tools = [
+    "Node.js",
+    "Next.js",
+    "Express.js",
+    "React.js",
+    "Redux",
+    "Zod",
+
+    "Git & Github",
+    "Vercel",
+    "Netlify",
+    "Render",
+    "DaisyUi",
+    "MUI",
+    "Redux",
+    "RTK Query",
+    "JWT",
+    "MaterialUi",
   ];
 
-  const tools = [
-    "QuickBooks Online",
-    "Xero",
-    "Wave Accounting",
-    "Excel",
-    "Google Sheets",
-    "Paychex",
-    "Gusto",
-    "Bill.com",
-    "Hubdoc",
-    "A2X",
-  ];
+  // Databases
   const Industry = [
-    "Retail and E-commerce",
-    "Real Estate",
-    "Salon and Spa",
-    "Hospitality and Tourism",
-    "Chartered Accountant Firms",
-    "Technology and IT Services",
-    "Logistics and Transportation",
-    "Entertainment and Media",
-    "Startups and Small Businesses",
+    "Prisma",
+    "MySQL",
+    "Firebase",
+    "MongoDB",
+    "Mongoose",
+    "PostgreSQL",
   ];
+  // DevTools
+  const DevTools = ["Git/GitHub", "REST", "Postman", "Vercel", "render"];
 
   return (
     <section
@@ -62,7 +72,8 @@ const TechnicalProficiency = () => {
             Technical Proficiency
           </h2>
           <p className="text-xl text-gray-600">
-            Comprehensive expertise in modern accounting and bookkeeping
+            Comprehensive expertise in modern full-stack web development using
+            the MERN stack (MongoDB, Express.js, React, Node.js).
           </p>
         </div>
 
@@ -118,7 +129,7 @@ const TechnicalProficiency = () => {
                     theme == "dark" ? " text-white" : ""
                   }`}
                 >
-                  Soft Skills
+                  Programming Languages
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -127,7 +138,7 @@ const TechnicalProficiency = () => {
                     <Badge
                       key={index}
                       variant="secondary"
-                      className="bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 hover:from-blue-200 hover:to-purple-200 animate-fade-in"
+                      className="bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 text-lg hover:from-blue-200 hover:to-purple-200 animate-fade-in"
                       style={{ animationDelay: `${0.6 + index * 0.1}s` }}
                     >
                       {skill}
@@ -147,7 +158,7 @@ const TechnicalProficiency = () => {
                     theme == "dark" ? " text-white" : ""
                   }`}
                 >
-                  Tools & Software
+                  Frameworks / Libraries
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -156,7 +167,7 @@ const TechnicalProficiency = () => {
                     <Badge
                       key={index}
                       variant="outline"
-                      className="border-green-200 text-green-800 hover:bg-green-50 animate-fade-in"
+                      className="border-green-200 text-blue-800 text-lg hover:bg-green-50 animate-fade-in"
                       style={{ animationDelay: `${0.8 + index * 0.1}s` }}
                     >
                       {tool}
@@ -175,7 +186,7 @@ const TechnicalProficiency = () => {
                     theme == "dark" ? " text-white" : ""
                   }`}
                 >
-                  Industry
+                  Databases
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -184,7 +195,35 @@ const TechnicalProficiency = () => {
                     <Badge
                       key={index}
                       variant="outline"
-                      className="border-green-200 text-green-800 hover:bg-green-50 animate-fade-in"
+                      className="border-green-200 text-blue-800 text-lg hover:bg-green-50 animate-fade-in"
+                      style={{ animationDelay: `${0.8 + index * 0.1}s` }}
+                    >
+                      {tool}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+            <Card
+              className="shadow-lg border-0 animate-fade-in hover-lift"
+              style={{ animationDelay: "0.6s" }}
+            >
+              <CardHeader>
+                <CardTitle
+                  className={`text-xl font-bold text-gray-900 ${
+                    theme == "dark" ? " text-white" : ""
+                  }`}
+                >
+                  DevTools
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {DevTools.map((tool, index) => (
+                    <Badge
+                      key={index}
+                      variant="outline"
+                      className="border-green-200 text-blue-800 text-lg hover:bg-green-50 animate-fade-in"
                       style={{ animationDelay: `${0.8 + index * 0.1}s` }}
                     >
                       {tool}

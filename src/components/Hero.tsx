@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/contexts/ThemeContext";
 import { Facebook, FileDown, Linkedin, Mail } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { TbBrandFiverr } from "react-icons/tb";
 import { Typewriter } from "react-simple-typewriter";
 import Header from "./Header";
@@ -66,21 +66,28 @@ const Hero = () => {
 
             <div className="flex space-x-6">
               <a
-                href={"https://www.facebook.com/profile.php?id=61556759051499"}
+                href={"https://www.facebook.com/azirzaif/about"}
                 target="blank"
                 className="text-gray-600 hover:text-blue-600 transition-colors"
               >
-                <Facebook className="w-6 h-6" />
+                <FaFacebook className="w-6 h-6" />
               </a>
               <a
-                href={"http://www.linkedin.com/in/khadizaremotebookkeeper"}
+                href={"https://www.linkedin.com/in/azir9200"}
                 target="blank"
                 className="text-gray-600 hover:text-blue-600 transition-colors"
               >
-                <Linkedin className="w-6 h-6" />
+                <FaLinkedin className="w-6 h-6" />
               </a>
               <a
-                href="https://wa.me/8801974905960"
+                href={"https://github.com/azir9200"}
+                target="blank"
+                className="text-gray-600 hover:text-blue-600 transition-colors"
+              >
+                <FaGithub className="w-6 h-6" />
+              </a>
+              <a
+                href="https://wa.me/383838485737"
                 target="blank"
                 className="text-gray-600 hover:text-blue-600 transition-colors"
               >
@@ -88,19 +95,19 @@ const Hero = () => {
               </a>
 
               <a
-                href="mailto:khadiza.atscorporation@gmail.com"
+                href="mailto:aziruddinn83@gmail.com"
                 className="text-gray-600 hover:text-blue-600 transition-colors"
               >
                 <Mail className="w-6 h-6" />
               </a>
 
-              <a
+              {/* <a
                 href={"https://www.fiverr.com/s/qD3QbyX"}
                 target="blank"
                 className="text-gray-600 hover:text-blue-600 transition-colors"
               >
                 <TbBrandFiverr className="w-6 h-6" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -115,8 +122,8 @@ const Hero = () => {
                   />
                 </div>
               </div>
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center animate-bounce">
-                <span className="text-white font-bold text-lg">MD</span>
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-green-400 to-red-500 rounded-full flex items-center justify-center animate-bounce">
+                <span className="text-white font-bold text-lg">AZIR</span>
               </div>
             </div>
           </div>

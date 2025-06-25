@@ -5,36 +5,6 @@ import { ExternalLink, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
-  // const projects = [
-  //   {
-  //     title: "E-Commerce Bookkeeping",
-  //     description: "Comprehensive bookkeeping solution for multi-platform e-commerce businesses with automated inventory tracking.",
-  //     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop",
-  //     category: "Bookkeeping",
-  //     color: "from-blue-500 to-cyan-500"
-  //   },
-  //   {
-  //     title: "Clean-Up & Catch Up Services",
-  //     description: "Professional financial cleanup and reconciliation services to get businesses back on track.",
-  //     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop",
-  //     category: "Financial Cleanup",
-  //     color: "from-green-500 to-emerald-500"
-  //   },
-  //   {
-  //     title: "Real Estate Bookkeeping",
-  //     description: "Specialized accounting services for real estate professionals and property management companies.",
-  //     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=250&fit=crop",
-  //     category: "Real Estate",
-  //     color: "from-purple-500 to-pink-500"
-  //   },
-  //   {
-  //     title: "Consultancy & Online Bookkeeping",
-  //     description: "Remote bookkeeping consultancy with cloud-based solutions for modern businesses.",
-  //     image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&h=250&fit=crop",
-  //     category: "Consultancy",
-  //     color: "from-orange-500 to-red-500"
-  //   }
-  // ];
 
   return (
     <section id="projects" className="py-20 bg-white">
