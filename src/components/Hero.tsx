@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/contexts/ThemeContext";
-import { Facebook, FileDown, Linkedin, Mail } from "lucide-react";
+import { FileDown, Mail } from "lucide-react";
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { TbBrandFiverr } from "react-icons/tb";
 import { Typewriter } from "react-simple-typewriter";
 import Header from "./Header";
 
@@ -48,7 +47,7 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <a href="/Khadiza Binta Mahbub.pdf" download>
+              <a href="/Developer1_azir.pdf" download>
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8"
@@ -100,14 +99,6 @@ const Hero = () => {
               >
                 <Mail className="w-6 h-6" />
               </a>
-
-              {/* <a
-                href={"https://www.fiverr.com/s/qD3QbyX"}
-                target="blank"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
-              >
-                <TbBrandFiverr className="w-6 h-6" />
-              </a> */}
             </div>
           </div>
 

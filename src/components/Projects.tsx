@@ -5,7 +5,6 @@ import { ExternalLink, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
-
   return (
     <section id="projects" className="py-20 bg-white">
       <div className="container mx-auto px-6">
@@ -40,7 +39,7 @@ const Projects = () => {
                       className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100"
                     >
                       <Eye className="w-4 h-4 mr-2" />
-                      View
+                      Live
                     </Button>
                     <Link to={`/project/${project.id}`}>
                       {" "}
@@ -50,7 +49,7 @@ const Projects = () => {
                         className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200"
                       >
                         <ExternalLink className="w-4 h-4 mr-2" />
-                        Details
+                        Github
                       </Button>
                     </Link>
                   </div>
