@@ -20,7 +20,9 @@ const ProjectDetails = () => {
   console.log(id);
   const { theme: Light } = useTheme();
 
-  const project = ProjectDetailsData.find((p) => p?.id == id);
+  // const project = ProjectDetailsData.find((p) => p?.id == id);
+  const project = ProjectDetailsData.find((p) => p?.id === Number(id));
+
   console.log(project);
   const relatedProject = ProjectDetailsData.filter(
     (projects) =>
@@ -71,9 +73,14 @@ const ProjectDetails = () => {
             onClick={() => handleMove("l")}
           />
           <div className="flex justify-center w-full">
-            <Img
+            {/* <Img
               src={project.images[slideNumber]}
               alt="all"
+              className="w-4/5 sm:w-3/5 lg:w-1/2 max-w-2xl object-contain"
+            /> */}
+            <img
+              src={project.images[slideNumber]}
+              alt="Slide"
               className="w-4/5 sm:w-3/5 lg:w-1/2 max-w-2xl object-contain"
             />
           </div>
@@ -201,7 +208,7 @@ const ProjectDetails = () => {
               </ul>
             ) : (
               <p className="text-gray-500 text-center">
-                No related projects available.
+                {/* No related projects available. */}
               </p>
             )}
           </div>
