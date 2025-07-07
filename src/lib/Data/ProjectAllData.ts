@@ -1,11 +1,12 @@
 export const ProjectDetailsData = [
   {
     id: 1,
+    live: "https://latest-food-display.vercel.app",
     type: "Street Grub Food",
     title: "Food display project, A Visual Feast of Urban Flavors",
 
     // client: "Confidential",
-    // industry: "Online Food choice and post",
+    industry: "Online Food choice and post",
     duration: "Mar 2025 - June 2025",
     tools: [
       "HTML5",
@@ -26,8 +27,8 @@ export const ProjectDetailsData = [
       "Git & Github",
       "Vercel",
     ],
-    Description: [
-      "The Street Grub Food Display Project showcases the vibrant essence of street food culture through a visually engaging, user-friendly web experience. Designed to highlight bold flavors, quick bites, and authentic street eats, this project captures the energy and variety found in bustling urban food scenes. From mouthwatering images to intuitive layouts, it celebrates the diversity of cuisines and styles that define street grub. The project emphasizes responsive design, smooth navigation, and appealing presentation, offering users an appetizing glimpse into the world of street food.",
+    description: [
+      "Description: The Street Grub Food Display Project showcases the vibrant essence of street food culture through a visually engaging, user-friendly web experience. Designed to highlight bold flavors, quick bites, and authentic street eats, this project captures the energy and variety found in bustling urban food scenes. From mouthwatering images to intuitive layouts, it celebrates the diversity of cuisines and styles that define street grub. The project emphasizes responsive design, smooth navigation, and appealing presentation, offering users an appetizing glimpse into the world of street food.",
       "It’s not just a display — it’s a digital taste of the streets",
     ],
     images: [
@@ -49,17 +50,17 @@ export const ProjectDetailsData = [
         link: "/ProfitandLoss - Buy Parts Online LLC.pdf",
       },
     ],
-    // description:
-    //   "Handled bookkeeping for an online wholesale store using QuickBooks Online, Shopify, and Hubdoc. Responsibilities included managing platform sales, automating document uploads, reconciling accounts, and categorizing transactions. Delivered accurate financial reports and ensured streamlined bookkeeping for efficient operations.",
+
     date: "November 14, 2024",
     color: "from-orange-500 to-red-500",
   },
   {
     id: 2,
     type: "e-Commerce-Fitness-Project",
+    live: "https://imagine-redux-story.vercel.app",
     title: "Fitness website",
-    // client: "Confidential",
-    // industry: "Transportation and Logistics",
+    client: "Food Lover",
+    industry: "Catering",
     duration: "Jan 2023 - Jun 2024",
     tools: [
       "HTML5",
@@ -81,14 +82,14 @@ export const ProjectDetailsData = [
       "Git & Github",
       "Vercel",
     ],
-    services: [
-      "Recorded and categorized daily transactions",
-      "Reconciled bank and credit card accounts monthly",
-      "Managed accounts payable and receivable",
-      "Processed payroll transactions",
-      "Prepared financial statements and reports",
-      "Organized records for tax filing and compliance",
-    ],
+    // services: [
+    //   "Recorded and categorized daily transactions",
+    //   "Reconciled bank and credit card accounts monthly",
+    //   "Managed accounts payable and receivable",
+    //   "Processed payroll transactions",
+    //   "Prepared financial statements and reports",
+    //   "Organized records for tax filing and compliance",
+    // ],
     images: [
       "/fitness1c.png",
       "/fitness2.png",
@@ -114,18 +115,19 @@ export const ProjectDetailsData = [
     ],
 
     description:
-      "I did bookkeeping for a transportation and logistics company using QuickBooks Online. Accurately recorded revenue, expenses, and payroll transactions while ensuring compliance with industry-specific accounting practices. Performed bank reconciliations, generated financial statements, and provided insights to optimize cash flow and operational efficiency.",
+      "The E-Commerce Fitness Project is a dynamic platform designed to bring fitness products, services, and content to users through a seamless online shopping experience. Combining e-commerce functionality with wellness-focused design, the platform enables users to browse and purchase fitness gear, supplements, workout plans, and digital coaching services. Built with responsive UI and secure payment integration, it ensures a smooth, engaging user journey across devices. The project also features product filtering, user reviews, and personalized recommendations to enhance customer satisfaction. It’s more than just a shop — it’s a complete digital destination for health-conscious consumers and fitness enthusiasts..",
 
     date: "January 2023",
     color: "from-purple-500 to-pink-500",
   },
   {
     id: 3,
-    type: "Book website    -Golden Book Store",
-    title: "Golden Book Store",
+    type: "Health Care",
+    title: "PH Health Care",
+    live: "https://ph-healthcare-frontend-two.vercel.app",
     client: "public",
-    industry: "Book",
-    duration: "jUNE 2024  -  July 2024",
+    industry: "Health",
+    duration: "August 2024  -  Nov 2024",
     tools: [
       "HTML5",
       "CSS3",
@@ -147,9 +149,9 @@ export const ProjectDetailsData = [
       "Vercel",
     ],
     services: [
-      "Managed project-based income and expenses.",
-      "Reconciled accounts and tracked vendor payments.",
-      "Ensured compliance with industry-specific accounting practices.",
+      "Managed patient, doctor, admin access.",
+      "Making appointment and see doctor.",
+      "Manage and update all data by admin.",
     ],
     images: [
       "/ph-health.png",
@@ -169,17 +171,18 @@ export const ProjectDetailsData = [
       },
     ],
     description:
-      "I provided bookkeeping services for a construction company using QuickBooks Online and Excel. Responsibilities included tracking project-related income and expenses, reconciling accounts, managing vendor payments, and organizing financial data. Generated financial reports to support budgeting and ensure compliance with industry accounting standards.",
-    date: "November 14, 2024",
+      "The Health Care Project is a modern, responsive web application designed to streamline patient care and medical data management. Built with user-centric design and robust technologies, it enables healthcare providers to efficiently track patient records, appointments, prescriptions, and more in a secure environment. The platform emphasizes accessibility, ease of navigation, and real-time updates, ensuring both patients and medical staff benefit from smooth, organized workflows. Whether it’s scheduling visits, reviewing medical history, or managing digital health reports, the system is optimized for reliability and performance — supporting better outcomes through smarter, tech-driven care solutions.",
+    // date: "November 14, 2024",
     color: "from-green-500 to-emerald-500",
   },
 
   {
     id: 4,
-    type: "E-commerce Bookkeeping",
+    live: "https://car-refresh-service.vercel.app",
+    type: "Book website    -Golden Book Store",
     title: "E-commerce Bookkeeping: A Complete Guide for Online Sellers",
-    // client: "Confidential",
-    // industry: "Disability Lab",
+    client: "Student, Teachers and all book lovers",
+    industry: "Print and bundle book",
     duration: "Jan 2024 -July 2024",
     tools: [
       "HTML5",
@@ -221,8 +224,113 @@ export const ProjectDetailsData = [
       },
     ],
     description:
-      "I managed the financial records for Disability Lab using QuickBooks Online and multiple platforms such as Amazon, Shopify, eBay, Etsy, A2X, Cin7 Core, and Pencil Pay. Services included recording multi-platform sales, reconciling transactions, managing expenses, and generating financial reports. Ensured accurate financial data to support business operations and tax compliance.",
+      "I managed the financial records for my Book Project using QuickBooks Online along with platforms such as Amazon, Shopify, and eBay. This included recording multi-platform book sales, reconciling transactions, managing publishing-related expenses, and generating detailed financial reports. I ensured that all financial data was accurate and up-to-date to support smooth business operations and meet tax compliance requirements. By integrating tools like A2X and Cin7 Core where necessary, I maintained clear visibility over revenue streams and inventory, providing a solid financial foundation for the project's growth and sustainability.",
     date: "Nov 2023 - Feb 2024",
+  },
+  {
+    id: 5,
+    type: "travel-destination-guide",
+    title: "travel-destination-guide",
+    // client: "Confidential",
+    // industry: "Disability Lab",
+    duration: "Jan 2023 -July 2023",
+    tools: [
+      "JavaScript",
+      "Tailwind",
+      "ReactJS",
+      "NextJs",
+      "Redux",
+      "RTK Query",
+      "JWT",
+      "Mongodb",
+      "ExpressJS",
+      "Mongoose",
+      "Nodejs",
+      "MySQL",
+      "Git & Github",
+      "Vercel",
+    ],
+
+    pdf: [
+      // {
+      //   name: "Rahman Intergalactic Enterprises LLC DBA Disability lab- PNL",
+      //   link: "/Rahman Intergalactic Enterprises LLC DBA Disability lab- PNL.pdf",
+      // },
+      // {
+      //   name: "Rahman Intergalactic",
+      //   link: "/Rahman Intergalactic.pdf",
+      // },
+    ],
+  },
+  {
+    id: 6,
+    type: "travel-destination-guide",
+    title: "travel-destination-guide",
+    // client: "Confidential",
+    // industry: "Disability Lab",
+    duration: "Jan 2023 -July 2023",
+    tools: [
+      "JavaScript",
+      "Tailwind",
+      "ReactJS",
+      "NextJs",
+      "Redux",
+      "RTK Query",
+      "JWT",
+      "Mongodb",
+      "ExpressJS",
+      "Mongoose",
+      "Nodejs",
+      "MySQL",
+      "Git & Github",
+      "Vercel",
+    ],
+
+    pdf: [
+      // {
+      //   name: "Rahman Intergalactic Enterprises LLC DBA Disability lab- PNL",
+      //   link: "/Rahman Intergalactic Enterprises LLC DBA Disability lab- PNL.pdf",
+      // },
+      // {
+      //   name: "Rahman Intergalactic",
+      //   link: "/Rahman Intergalactic.pdf",
+      // },
+    ],
+  },
+  {
+    id: 7,
+    type: "travel-destination-guide",
+    title: "travel-destination-guide",
+    // client: "Confidential",
+    // industry: "Disability Lab",
+    duration: "Jan 2023 -July 2023",
+    tools: [
+      "JavaScript",
+      "Tailwind",
+      "ReactJS",
+      "NextJs",
+      "Redux",
+      "RTK Query",
+      "JWT",
+      "Mongodb",
+      "ExpressJS",
+      "Mongoose",
+      "Nodejs",
+      "MySQL",
+      "Git & Github",
+      "Vercel",
+    ],
+
+    pdf: [
+      // {
+      //   name: "Rahman Intergalactic Enterprises LLC DBA Disability lab- PNL",
+      //   link: "/Rahman Intergalactic Enterprises LLC DBA Disability lab- PNL.pdf",
+      // },
+      // {
+      //   name: "Rahman Intergalactic",
+      //   link: "/Rahman Intergalactic.pdf",
+      // },
+    ],
   },
 
   // {

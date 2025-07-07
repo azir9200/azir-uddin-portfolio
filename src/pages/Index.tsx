@@ -22,6 +22,9 @@ const Index = () => {
       <div id="skills">
         <TechnicalProficiency />
       </div>
+      <div id="projects">
+        <Projects />
+      </div>
       {/* <div id="about">
         <About />
       </div> */}
@@ -34,9 +37,7 @@ const Index = () => {
       <div id="education">
         <Education />
       </div>
-      <div id="projects">
-        <Projects />
-      </div>
+
       <div id="contact">
         <Contact />
       </div>

@@ -10,11 +10,8 @@ const Projects = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Achievements & Projects
+            My Projects
           </h2>
-          <p className="text-xl text-gray-600">
-            Showcasing successful bookkeeping and financial management projects
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -38,10 +35,21 @@ const Projects = () => {
                       variant="secondary"
                       className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100"
                     >
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        className="flex"
+                        rel="noopener noreferrer"
+                      >
+                        <Eye className="w-4 h-4 mr-2" />
+                        Live
+                      </a>
+
+                      {/* 
                       <Eye className="w-4 h-4 mr-2" />
-                      Live
+                      Live */}
                     </Button>
-                    <Link to={`/project/${project.id}`}>
+                    <Link to={`https://github.com/azir9200`}>
                       {" "}
                       <Button
                         size="sm"
@@ -50,6 +58,18 @@ const Projects = () => {
                       >
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Github
+                      </Button>
+                    </Link>
+
+                    <Link to={`/project/${project.id}`}>
+                      {" "}
+                      <Button
+                        size="sm"
+                        variant="secondary"
+                        className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200"
+                      >
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Preview
                       </Button>
                     </Link>
                   </div>

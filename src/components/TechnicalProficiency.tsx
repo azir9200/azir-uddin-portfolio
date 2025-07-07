@@ -77,8 +77,8 @@ const TechnicalProficiency = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2">
+        <div className="">
+          {/* <div className="lg:col-span-2">
             <Card
               className="shadow-lg border-0 animate-fade-in hover-lift"
               style={{ animationDelay: "0.2s" }}
@@ -116,9 +116,9 @@ const TechnicalProficiency = () => {
                 ))}
               </CardContent>
             </Card>
-          </div>
+          </div> */}
 
-          <div className="space-y-8">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
             <Card
               className="shadow-lg border-0 animate-fade-in hover-lift"
               style={{ animationDelay: "0.4s" }}
@@ -176,6 +176,7 @@ const TechnicalProficiency = () => {
                 </div>
               </CardContent>
             </Card>
+
             <Card
               className="shadow-lg border-0 animate-fade-in hover-lift"
               style={{ animationDelay: "0.6s" }}
@@ -204,6 +205,7 @@ const TechnicalProficiency = () => {
                 </div>
               </CardContent>
             </Card>
+
             <Card
               className="shadow-lg border-0 animate-fade-in hover-lift"
               style={{ animationDelay: "0.6s" }}
