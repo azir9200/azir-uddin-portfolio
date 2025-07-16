@@ -40,9 +40,10 @@ const Hero = () => {
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
                 I’m a MERN stack developer with experience building full-stack
-                web applications using MongoDB, Express.js, React, and Node.js.
-                I help businesses bring their ideas to life by creating clean,
-                scalable, and responsive web solutions.
+                web applications using MongoDB, Express.js, React, Typescript
+                Redux, RTK Query and Node.js. I help businesses bring their
+                ideas to life by creating clean, scalable, and responsive web
+                solutions.
               </p>
             </div>
 
@@ -50,7 +51,7 @@ const Hero = () => {
               <a href="/Developer1_azir.pdf" download>
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-900 hover:to-purple-900 text-white px-8"
                 >
                   <FileDown className="w-5 h-5 mr-2" />
                   Resume
@@ -86,7 +87,7 @@ const Hero = () => {
                 <FaGithub className="w-6 h-6" />
               </a>
               <a
-                href="https://wa.me/383838485737"
+                href="https://wa.me/00353838485737"
                 target="blank"
                 className="text-gray-600 hover:text-blue-600 transition-colors"
               >
@@ -108,7 +109,7 @@ const Hero = () => {
                 <div className="w-full h-full rounded-full bg-white p-4">
                   <img
                     src="https://i.ibb.co/TDBzHJqC/azir-1.jpg"
-                    alt="Azir uddin"
+                    alt="Azir Uddin"
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
