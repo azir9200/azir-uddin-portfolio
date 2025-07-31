@@ -10,7 +10,7 @@ const Experience = () => {
       position: "Assistant Service",
       company: "KSG Food",
       location: "St. James Hospital, Dublin, Ireland",
-      duration: "Dec 2024 - continue",
+      duration: "Dec 2024 - july 2025",
       type: "Full-time",
       description:
         "Provided high-quality customer service in a fast-paced café environment, assisting with order preparation, maintaining cleanliness, and ensuring customer satisfaction. Contributed to smooth daily operations by supporting baristas, managing stock levels, and handling point-of-sale transactions.",

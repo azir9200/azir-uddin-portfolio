@@ -40,10 +40,10 @@ const Hero = () => {
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
                 I’m a MERN stack developer with experience building full-stack
-                web applications using MongoDB, Express.js, React, Typescript
-                Redux, RTK Query and Node.js. I help businesses bring their
-                ideas to life by creating clean, scalable, and responsive web
-                solutions.
+                web applications using React, Typescript, NextJs, Redux, RTK
+                Query and Node.js MongoDB, Express.js. I help businesses bring
+                their ideas to life by creating clean, scalable, and responsive
+                web solutions.
               </p>
             </div>
 
@@ -87,7 +87,7 @@ const Hero = () => {
                 <FaGithub className="w-6 h-6" />
               </a>
               <a
-                href="https://wa.me/00353838485737"
+                href="https://wa.me/00351920319177"
                 target="blank"
                 className="text-gray-600 hover:text-blue-600 transition-colors"
               >
