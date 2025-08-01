@@ -46,7 +46,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-20 bg-gradient-to-br from-slate-50 to-blue-50"
+      className="py-8 bg-gradient-to-br from-slate-50 to-blue-50"
     >
       <div className="container mx-auto md:px-6 px-2">
         <div className="text-center mb-16">

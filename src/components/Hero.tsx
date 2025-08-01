@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/contexts/ThemeContext";
-import { FileDown, Mail } from "lucide-react";
+import { Eye, FileDown, Mail } from "lucide-react";
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 import Header from "./Header";
@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center">
       <Header />
-      <div className="container mx-auto px-6 pt-20">
+      <div className="container mx-auto px-6 pt-20 shadow-lg">
         <div className=" flex justify-between items-center md:flex-row flex-col-reverse">
           <div className="space-y-8">
             <div className="md:space-y-4 space-y-2">
@@ -48,7 +48,7 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <a href="/Developer1_azir.pdf" download>
+              {/* <a href="/Developer1_azir.pdf" download>
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-900 hover:to-purple-900 text-white px-8"
@@ -57,8 +57,36 @@ const Hero = () => {
                   Resume
                 </Button>
               </a>
+             
+
+              {/* View Resume Button */}
+              <div> </div>
+              <Button
+                size="lg"
+                onClick={() => window.open("/Developer1_azir.pdf", "_blank")}
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-900 hover:to-purple-900 text-white px-4"
+              >
+                <Eye className="w-4 h-5 mr-2" />
+                View Resume
+              </Button>
+              {/* Download Resume Button */}
+              <a href="/Developer1_azir.pdf" download>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-2"
+                >
+                  <FileDown className="w-5 h-5 mr-2" />
+                  Download Resume
+                </Button>
+              </a>
+              {/* Contact Button */}
               <a href="#contact">
-                <Button variant="outline" size="lg" className="px-8">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6"
+                >
                   Contact Me
                 </Button>
               </a>

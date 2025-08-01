@@ -7,6 +7,26 @@ const Experience = () => {
   const { theme } = useTheme();
   const experiences = [
     {
+      position: "Night Audit",
+      company: "Radisson Blu St. Helen's Hotel",
+      location: "Stillorgan Rd, Booterstown, Dublin, A94 V6W3",
+      duration: "Currently Working",
+      type: "Full-time",
+      description:
+        "Managed overnight front desk operations at Radisson Blu Hotel, delivering exceptional guest service while performing end-of-day financial audits and reconciling accounts. Handled late check-ins and check-outs, resolved guest inquiries efficiently, and ensured accurate reporting to support hotel management.",
+      achievements: [
+        "There I gaining experience for making correct financial reports at the end of the day and doing night audits without mistakes, helping hotel work run well, Handled busy and difficult situations during the night, like late check-ins and guest problems, and got good feedback from guests and managers.",
+      ],
+
+      // technologies: [
+      //   "QuickBooks Online",
+      //   "Xero",
+      //   "Wave",
+      //   "Excel",
+      //   "Google Sheets",
+      // ],
+    },
+    {
       position: "Assistant Service",
       company: "KSG Food",
       location: "St. James Hospital, Dublin, Ireland",
@@ -44,7 +64,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-white">
+    <section id="experience" className=" pt-8 pb-4 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

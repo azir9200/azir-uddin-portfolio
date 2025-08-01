@@ -63,7 +63,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="py-20 bg-background transition-colors duration-300"
+      className="py-2 bg-background transition-colors duration-300"
     >
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">

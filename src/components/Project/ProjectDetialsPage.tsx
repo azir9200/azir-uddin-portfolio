@@ -99,9 +99,9 @@ const ProjectDetails = () => {
           Back to Home
         </Link>
 
-        <div className="md:flex w-full gap-8">
+        <div className=" w-full gap-8">
           {/* Project Details */}
-          <div className="md:w-2/3">
+          <div className="w-full">
             <h2 className="text-2xl md:text-3xl font-extrabold   mb-4 t">
               {project?.type}
             </h2>
@@ -174,43 +174,6 @@ const ProjectDetails = () => {
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* Related Projects */}
-          <div
-            className={`md:w-1/3 sticky top-0 h-full bg-gray-100 dark:bg-gray-800 text-black p-4 rounded-b-lg shadow-lg mt-4 md:mt-0 ${
-              Light == "dark" ? " text-white " : ""
-            }`}
-          >
-            <h2 className="text-xl font-bold mb-2 text-center">
-              Related Projects
-            </h2>
-            <h3 className="text-lg text-[#149ECA] text-center mb-4">
-              {project?.type}
-            </h3>
-            {relatedProject.length > 0 ? (
-              <ul className="space-y-4">
-                {relatedProject.map((item, index) => (
-                  <li key={index} className="flex items-center space-x-4">
-                    <img
-                      src={item.images[0]}
-                      alt={item.title}
-                      className="w-16 h-16 object-cover rounded-md"
-                    />
-                    <Link
-                      to={`/project/${item.id}`}
-                      className="text-sm hover:text-blue-500 font-medium truncate w-[90%]"
-                    >
-                      {item.industry}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className="text-gray-500 text-center">
-                {/* No related projects available. */}
-              </p>
-            )}
           </div>
         </div>
       </div>
