@@ -29,11 +29,20 @@ const Contact = () => {
   // const form = useRef();
   const form = useRef<HTMLFormElement>(null);
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-
-  const sendEmail = (e) => {
+  const [showMessage, setShowMessage] = useState(false);
+  const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setError("");
+    setSuccess(false);
+
+    if (!form.current) {
+      setError("Form not found.");
+      setLoading(false);
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -45,13 +54,17 @@ const Contact = () => {
       .then(
         () => {
           setSuccess(true);
-          form.current.reset(); // ✅ Reset form
-          setLoading(false); // Stop loading
+          setShowMessage(true);
+          form.current?.reset();
+          setLoading(false);
+          setTimeout(() => {
+            setShowMessage(false);
+          }, 5000);
         },
         (error) => {
           console.error("Email sending error:", error.text);
-          setSuccess(false);
-          setLoading(false); // Stop loading
+          setError("❌ Failed to send. Please try again later.");
+          setLoading(false);
         }
       );
   };
@@ -73,12 +86,14 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
               <p className="text-blue-200 leading-relaxed mb-8">
-                Ready to take your web application to the next level? As a MERN
-                Stack Developer, I'm here to build fast, scalable, and
-                user-friendly solutions. From maintaining clean code and
-                seamless integration to optimizing performance and ensuring best
-                practices, I help turn your ideas into powerful digital
-                experiences.
+                Looking for a proactive, fast-learning, and reliable MERN Stack
+                Developer ? I am experienced with building user-friendly,
+                scalable applications and love solving real-world problems with
+                clean, modern code.
+                <br />
+                <br />
+                Feel free to message me—whether you have a job opening, a
+                freelance project, or want to collaborate!
               </p>
             </div>
 
@@ -115,7 +130,55 @@ const Contact = () => {
             </div>
 
             <div className="flex space-x-4 pt-4">
-              <a href="https://www.linkedin.com/in/azir9200" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/azir9200"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
+                >
+                  <FaLinkedinIn className="w-6 h-6" />
+                </Button>
+              </a>
+
+              <a
+                href="https://github.com/azir9200"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
+                >
+                  <FaGithub className="w-6 h-6" />
+                </Button>
+              </a>
+
+              <a
+                href="https://www.facebook.com/azirzaif/about"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
+                >
+                  <FaFacebookF className="w-6 h-6" />
+                </Button>
+              </a>
+            </div>
+
+            {/* <div className="flex space-x-4 pt-4">
+              <a
+                href="https://www.linkedin.com/in/azir9200"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
                 <Button
                   variant="outline"
                   size="icon"
@@ -124,7 +187,11 @@ const Contact = () => {
                   <FaLinkedinIn className="w-10 h-10" />
                 </Button>
               </a>
-              <a href="https://github.com/azir9200" target="_blank">
+              <a
+                href="https://github.com/azir9200"
+                target="_blank"
+                aria-label="GitHub"
+              >
                 <Button
                   variant="outline"
                   size="icon"
@@ -134,7 +201,11 @@ const Contact = () => {
                 </Button>
               </a>
 
-              <a href="https://www.facebook.com/azirzaif/about" target="_blank">
+              <a
+                href="https://www.facebook.com/azirzaif/about"
+                target="_blank"
+                aria-label="Facebook"
+              >
                 <Button
                   variant="outline"
                   size="icon"
@@ -156,7 +227,7 @@ const Contact = () => {
                   <Mail className="w-5 h-5" />
                 </Button>
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Form with EmailJS */}
@@ -166,7 +237,7 @@ const Contact = () => {
                 Send Message
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
+            {/* <CardContent className="space-y-6">
               <form ref={form} onSubmit={sendEmail}>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
@@ -261,6 +332,105 @@ const Contact = () => {
                     ✅ Message sent successfully!
                   </p>
                 )}
+              </form>
+            </CardContent> */}
+            <CardContent className="space-y-6">
+              <form ref={form} onSubmit={sendEmail}>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-blue-200">
+                      First Name
+                    </label>
+                    <Input
+                      name="first_name"
+                      placeholder="Your first name"
+                      required
+                      className="bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-blue-400"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-blue-200">
+                      Last Name
+                    </label>
+                    <Input
+                      name="last_name"
+                      placeholder="Your last name"
+                      required
+                      className="bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-blue-400"
+                    />
+                  </div>
+                </div>
+
+                <div className="space-y-2 mt-4">
+                  <label className="text-sm font-medium text-blue-200">
+                    Email Address
+                  </label>
+                  <Input
+                    name="user_email"
+                    type="email"
+                    placeholder="your.email@example.com"
+                    required
+                    className="bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-blue-400"
+                  />
+                </div>
+
+                <div className="space-y-2 mt-4">
+                  <label className="text-sm font-medium text-blue-200">
+                    Message
+                  </label>
+                  <Textarea
+                    name="message"
+                    placeholder="Tell me how I can help you..."
+                    rows={5}
+                    required
+                    className="bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-blue-400 resize-none"
+                  />
+                </div>
+
+                <Button
+                  type="submit"
+                  className="w-full mt-6 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600"
+                  disabled={loading}
+                >
+                  {loading ? (
+                    <span className="flex items-center justify-center space-x-2">
+                      <svg
+                        className="animate-spin h-4 w-4 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                        />
+                      </svg>
+                      <span className="ml-2">Sending...</span>
+                    </span>
+                  ) : (
+                    <>
+                      <Send className="w-4 h-4 mr-2" />
+                      Send Message
+                    </>
+                  )}
+                </Button>
+
+                {showMessage && success && (
+                  <p className="text-green-400 text-sm mt-4">
+                    ✅ Message sent successfully!
+                  </p>
+                )}
+
+                {error && <p className="text-red-400 text-sm mt-4">{error}</p>}
               </form>
             </CardContent>
           </Card>

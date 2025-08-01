@@ -1,7 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ProjectDetailsData } from "@/lib/Data/ProjectAllData";
-import { ExternalLink, Eye } from "lucide-react";
+import {
+  Book,
+  BookA,
+  BookAIcon,
+  ExternalLink,
+  Eye,
+  FileText,
+  Globe,
+} from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -41,13 +50,9 @@ const Projects = () => {
                         className="flex"
                         rel="noopener noreferrer"
                       >
-                        <Eye className="w-4 h-4 mr-2" />
+                        <Globe className="w-4 h-4 mr-2" />
                         Live
                       </a>
-
-                      {/* 
-                      <Eye className="w-4 h-4 mr-2" />
-                      Live */}
                     </Button>
                     <Link to={`https://github.com/azir9200`}>
                       {" "}
@@ -56,7 +61,7 @@ const Projects = () => {
                         variant="secondary"
                         className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200"
                       >
-                        <ExternalLink className="w-4 h-4 mr-2" />
+                        <FaGithub className="w-4 h-4 mr-2" />
                         Github
                       </Button>
                     </Link>
@@ -68,8 +73,8 @@ const Projects = () => {
                         variant="secondary"
                         className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200"
                       >
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Preview
+                        <FileText className="w-4 h-4 mr-2" />
+                        View Details
                       </Button>
                     </Link>
                   </div>

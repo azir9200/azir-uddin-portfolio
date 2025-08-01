@@ -13,18 +13,10 @@ const Experience = () => {
       duration: "Currently Working",
       type: "Full-time",
       description:
-        "Managed overnight front desk operations at Radisson Blu Hotel, delivering exceptional guest service while performing end-of-day financial audits and reconciling accounts. Handled late check-ins and check-outs, resolved guest inquiries efficiently, and ensured accurate reporting to support hotel management.",
+        "Managed  front desk operations at Radisson Blu Hotel by using Opera Cloud for Hotel Management, delivering exceptional guest service while performing end-of-day financial audits and reconciling accounts. Handled late check-ins and check-outs, resolved guest inquiries efficiently, and ensured accurate reporting to support hotel management.",
       achievements: [
-        "There I gaining experience for making correct financial reports at the end of the day and doing night audits without mistakes, helping hotel work run well, Handled busy and difficult situations during the night, like late check-ins and guest problems, and got good feedback from guests and managers.",
+        "There I am gaining experience for making correct financial reports at the end of the day and doing night audits without mistakes, helping hotel work run well, Handled busy and difficult situations during the night, like late check-ins and guest problems, and got good feedback from guests and managers.",
       ],
-
-      // technologies: [
-      //   "QuickBooks Online",
-      //   "Xero",
-      //   "Wave",
-      //   "Excel",
-      //   "Google Sheets",
-      // ],
     },
     {
       position: "Assistant Service",
@@ -38,19 +30,12 @@ const Experience = () => {
         "Recognized for consistently delivering excellent customer service and improving customer satisfaction through friendly, efficient support.",
         "Played a key role in maintaining smooth workflow during peak hours, contributing to increased daily sales and positive customer feedback.",
       ],
-      // technologies: [
-      //   "QuickBooks Online",
-      //   "Xero",
-      //   "Wave",
-      //   "Excel",
-      //   "Google Sheets",
-      // ],
     },
     {
       position: "Customer Service",
       company: "Viking River Cruise",
       location: "Porto, Portugal",
-      duration: "2017 - 2024",
+      duration: "May 2017 - June 2024",
       type: "Full-time",
       description:
         "From May 2017 to November 2023, I worked as a Customer Service Representative at Viking River Cruise in Porto, Portugal. In this role, I was responsible for ensuring a smooth and enjoyable experience for international guests by assisting with their daily needs. I worked primarily in the restaurant and bar, providing food and beverage service, while also supporting the guest services team on certain days. This role required strong communication skills, attention to detail, and the ability to remain calm and professional in a fast-paced, multicultural environment. My flexibility and commitment to excellent service contributed to consistently positive guest experiences.",
@@ -120,13 +105,15 @@ const Experience = () => {
                 </div>
               </CardHeader>
               <CardContent className="space-y-6">
-                <p
-                  className={`text-gray-600 leading-relaxed ${
-                    theme == "dark" ? " text-white" : ""
-                  }`}
-                >
-                  {exp.description}
-                </p>
+                <div className="flex">
+                  <p
+                    className={`text-gray-600 leading-relaxed ${
+                      theme == "dark" ? " text-white" : ""
+                    }`}
+                  >
+                    Job Description : {exp.description}
+                  </p>
+                </div>
 
                 <div>
                   <h4
